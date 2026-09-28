@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:moviles_2026_2/views/ciclo_vida/ciclo_vida_screen.dart';
 import 'package:moviles_2026_2/views/home/home_screen.dart';
 import 'package:moviles_2026_2/views/paso_parametros/detalle_screen.dart';
 import 'package:moviles_2026_2/views/paso_parametros/paso_parametros_screen.dart';
@@ -26,6 +27,10 @@ final GoRouter appRouter = GoRouter(
         final metodo = state.pathParameters['metodo']!;
         return DetalleScreen(parametro: parametro, metodoNavegacion: metodo);
       },
+    ),
+    GoRoute(
+      path: '/ciclo_vida',
+      builder: (context, state) => const CicloVidaScreen(),
     ),
   ],
 );
