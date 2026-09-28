@@ -12,15 +12,14 @@ class CustomDrawer extends StatelessWidget {
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Theme.of(
-                context,
-              ).colorScheme.primary, // Usa el color primario del tema
+              color: Theme.of(context)
+                  .colorScheme
+                  .primary, // Usa el color primario del tema
             ),
             child: const Text(
               'Menú',
               style: TextStyle(
-                color: Colors
-                    .white, // Texto blanco para contrastar con el color primario
+                color: Colors.white, // Texto blanco para contrastar con el color primario
                 fontSize: 24,
               ),
             ),
