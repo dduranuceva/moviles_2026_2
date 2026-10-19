@@ -77,6 +77,20 @@ class CustomDrawer extends StatelessWidget {
               context.go('/ciclo_vida');
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.loop),
+            title: const Text('pokemons'),
+            onTap: () {
+              context.go('/pokemons');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.store),
+            title: const Text('Establecimientos'),
+            onTap: () {
+              context.go('/establecimientos');
+            },
+          ),
         ],
       ),
     );
